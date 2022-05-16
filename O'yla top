@@ -1,0 +1,67 @@
+from random import *
+
+g = '\033[92m' 
+y = '\033[93m' 
+r = '\033[91m' 
+w = '\033[0m' 
+
+print(y,"Salom o'yla top o'yniga hush kelibsiz  ! \nBoshladik")
+
+print(r,"Variantlardan birini tanlang: \n1️⃣ : 1-dan 10-gacha o'ylamoq Easy \n2️⃣ : 1-dan 25-gacha o'ylamoq Normal \n3️⃣ : 1-dan 50-gacha o'ylamoq Hard ")
+
+insert=int(input("Variantlardan birini tartib raqamini kiriting > "))
+
+if insert == 1:
+    print(g,"Boshladik men 1-dan 10-gacha bo'lgan son o'yladim toping ")
+    think = randint(1,10)
+    answer=""
+    while think != answer:
+        answer = int(input("Nechi raqamini o'yladim "))
+        if answer == think:
+            print("Topdingiz ✅  ")
+        else:
+            print(y,"Xato 🚫  ")    
+
+
+if insert == 2:
+    print(g,"Boshladik men 1-dan 25-gacha bo'lgan son o'yladim toping ")
+    print("Yordam kerak bol'sa 00 ni kiriting 😍😇     ")
+    think = randint(1,25)
+    answer=""
+    while think != answer:
+        answer = int(input("Nechi raqamini o'yladim "))
+        if answer == think:
+            print("Tabriklayman topdingiz ✅✅✅      ")
+        elif answer == 00:
+                 if think < 15 :
+                     print("Men o'ylagan son 15 dan kichik")
+                 elif think == 15 :
+                     print("Javobi 15 ")    
+                 else:
+                     print("Men o'ylagan son 15 dan katta ")    
+                 
+        else:
+            print("Xato 🚫🚫🚫    ")                    
+            
+                                                                           
+if insert == 3:
+    print(g,"Boshladik men 1-dan 50-gacha bo'lgan son o'yladim toping ")
+    print("Yordam kerak bol'sa 00 ni kiriting 😍😇     ")
+    think = randint(1,50)
+    answer=""
+    while think != answer:
+        answer = int(input("Nechi raqamini o'yladim "))
+        if answer == think:
+            print("Tabriklayman topdingiz ✅✅✅      ")
+        elif answer == 00:
+                 if think < 20 :
+                     print("Men o'ylagan son 20 dan kichik")
+                 elif think == 20:
+                     print("Javobi 20 ")    
+                 else:
+                     print("Men o'ylagan son 20 dan katta ")    
+                 
+        else:
+            print("Xato 🚫🚫🚫    ")                       
+else:
+    print(w,"Telegram 👨‍💻➡️         @ANONIM_HACKER_007")                                     
